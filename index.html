@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nome Cognome</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      background: #1b1b1b;
+      border-radius: 28px;
+      padding: 36px 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: 0 0 28px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background: #2b2b2b;
+      padding: 16px;
+      margin: 12px 0;
+      border-radius: 16px;
+      font-size: 17px;
+      border: 1px solid #333;
+    }
+
+    .btn:active {
+      background: #444;
+    }
+
+    .primary {
+      background: white;
+      color: black;
+      font-weight: bold;
+    }
+
+    .qr {
+      margin-top: 28px;
+      width: 180px;
+      height: 180px;
+      background: white;
+      padding: 12px;
+      border-radius: 18px;
+    }
+
+    .small {
+      color: #aaa;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+
+    <!-- LOGO -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <!-- NOME -->
+    <h1>Nome Cognome</h1>
+
+    <!-- CONTATTI -->
+    <a class="btn primary" href="tel:+391234567890">Chiama</a>
+
+    <a class="btn" href="https://wa.me/391234567890" target="_blank">
+      WhatsApp
+    </a>
+
+    <a class="btn" href="mailto:mail@esempio.com">
+      mail@esempio.com
+    </a>
+
+    <a class="btn" href="https://www.sitoweb.com" target="_blank">
+      www.sitoweb.com
+    </a>
+
+    <!-- QR CODE -->
+    <img
+      class="qr"
+      src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://www.sitoweb.com"
+      alt="QR Code"
+    >
+
+    <p class="small">Scansiona per aprire il biglietto</p>
+
+  </main>
+</body>
+</html>
